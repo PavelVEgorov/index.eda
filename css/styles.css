@@ -39,6 +39,7 @@ body {
   border: none;
   margin-right: 18px;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .login {
