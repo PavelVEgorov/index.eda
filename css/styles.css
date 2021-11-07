@@ -5,12 +5,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .conteiner {
-  max-width: 1194px;
+  /* max-width: 1194px; */
   margin: auto;
 }
 
 /* Header start */
 .header {
+  max-width: 1194px;
   display: flex;
   align-items: center;
   padding-top: 10px;
@@ -87,7 +88,10 @@ body {
 /* Header end */
 
 /* sliders start */
-
+.sliders {
+  max-width: 1194px;
+  margin: 20px auto 50px;
+}
 .slide {
   width: 1190px;
   min-height: 400px;
@@ -147,10 +151,12 @@ body {
 
 /* offers start */
 .offers {
+  max-width: 1194px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   color: #ffffff;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .offer-card {
@@ -159,7 +165,8 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  border-radius: 20px
+  border-radius: 20px;
+  /* margin: 27px; */
 }
 
 .offer-header {
@@ -215,9 +222,319 @@ body {
 .offer-footer__bгtton {
   display: inline-block;
   text-decoration: none;
-  color: #5F5F61;
-  background-color: #FFFFFF;
+  color: #5f5f61;
+  background-color: #ffffff;
   padding: 13px 52px;
   border-radius: 50px;
 }
 /* offers end */
+
+/* delivery start */
+.delivery {
+  max-width: 1194px;
+  margin: 110px auto 100px;
+}
+
+.delivery-title {
+  margin: 0 0 47px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  justify-content: space-around;
+}
+
+.delivery-card {
+  display: block;
+  margin: 15px;
+  width: 275px;
+  height: 180px;
+  border-radius: 18px;
+}
+
+.card-healthy {
+  background-image: url(../img/healthy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-vegetable {
+  background-image: url(../img/vegetable.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-meat {
+  background-image: url(../img/meat.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-bird {
+  background-image: url(../img/bird.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-fish {
+  background-image: url(../img/fish.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-baby {
+  background-image: url(../img/baby.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-parents {
+  background-image: url(../img/parents.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-festive {
+  background-image: url(../img/festive.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.delivery-card__title {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 16px 10px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+.card-healthy__title {
+  background-color: #d0fd89;
+  color: #49494f;
+}
+.card-vegetable__title {
+  background-color: #aebc41;
+  color: #ffffff;
+}
+.card-meat__title {
+  background-color: #b86b78;
+  color: #ffffff;
+}
+.card-bird__title {
+  background-color: #d68334;
+  color: #ffffff;
+}
+.card-fish__title {
+  background-color: #cd6255;
+  color: #ffffff;
+}
+.card-baby__title {
+  background-color: #fffdbf;
+  color: #49494f;
+}
+.card-parents__title {
+  background-color: #f6fdc8;
+  color: #49494f;
+}
+.card-festive__title {
+  background-color: #fef7fe;
+  color: #49494f;
+}
+/* delivery end */
+
+/* food-categories start */
+.food-categories {
+  background-color: #f6f6f6;
+  margin-bottom: 100px;
+}
+
+.food-categories__conteiner {
+  max-width: 1194px;
+  margin: 0 auto;
+}
+
+.food-categories-title {
+  margin: 0;
+  padding-top: 42px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.food-categories-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 461px;
+  margin: 47px 0 62px;
+}
+
+.food-categories-nav__menu {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: #49494f;
+}
+
+.food-categories-nav__popular,
+.food-categories-nav__menu:active {
+  color: #f37321;
+}
+
+.food-categories-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.food-categories-cards__card {
+  max-width: 270px;
+  height: 471px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+}
+
+.food-categories-cards__card__img {
+  max-width: 100%;
+}
+
+.food-categories-cards__card__description {
+  padding: 21px 24px;
+}
+
+.food-categories-cards__card__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.food-categories-cards__card__text {
+  margin: 13px 0 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.food-categories-cards__card__footer {
+  display: flex;
+  justify-content: space-between;
+  width: 223px;
+  height: 50px;
+  margin-top: 35px;
+}
+
+.food-categories-cards__card__footer__price {
+  margin: 0;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+}
+
+.food-categories-cards__card__footer__weight {
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+  padding-top: 7px;
+}
+
+.food-categories-cards__card__footer__button {
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  color: #f37321;
+  background-color: transparent;
+  padding: 12px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.food-categories-cards__card__footer__more {
+  display: flex;
+}
+
+.food-categories-cards__card__footer__more__button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 62px auto 58px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f37321;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  padding: 15px 105px;
+}
+/* food-categories end */
+
+/* advantages start */
+.advatages-conteiner {
+  max-width: 1194px;
+  margin: 0 auto;
+}
+
+.advantages-cards__card__img {
+  width: 60px;
+  height: 56px;
+}
+.advantages-title {
+  margin: 0 0 52px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.advantages-cards {
+  max-width: 1194px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 200px;
+}
+
+.advantages-cards__card {
+  max-width: 270px;
+  height: 296px;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  text-align: center; 
+}
+
+.advantages-cards__card__conteiner {
+  padding: 32px 24px 25px;
+}
+
+.advantages-cards__card__title {
+  margin: 34px 0 13px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.advantages-cards__card__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #49494f;
+}
+/* advantages end */
