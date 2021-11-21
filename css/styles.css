@@ -538,3 +538,40 @@ body {
   color: #49494f;
 }
 /* advantages end */
+
+/* footer start */
+.footer {
+  background-color: #F6F6F6;
+  height: 181px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-conteiner {
+  display: flex;
+  align-items: center;
+  width: 1194px;
+}
+
+.footer__logo {
+  width: 200px;
+  height: 90px;
+}
+
+.footer__link {
+  margin-left: 50px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+  text-decoration-skip-ink: none;
+}
+.footer-socialsnetwork {
+  display: flex;
+  justify-content: space-between;
+  width: 124px;
+  height: 28px;
+  margin-left: auto;
+}
+/* footer end */
+
