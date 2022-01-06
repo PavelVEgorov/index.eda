@@ -1,21 +1,26 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
 }
-.conteiner {
-  /* max-width: 1194px; */
+
+.container {
+  max-width: 1194px;
   margin: auto;
 }
 
+/* .main {} */
+
 /* Header start */
 .header {
-  max-width: 1194px;
+  margin: auto;
   display: flex;
   align-items: center;
   padding-top: 10px;
 }
+
 .search-form {
   display: flex;
   margin-left: 76px;
@@ -23,10 +28,13 @@ body {
   background: rgba(238, 238, 238, 0.71);
   max-width: 620px;
   flex-grow: 1;
+  position: relative;
 }
+
 .search-form__input {
   background-color: transparent;
   border: none;
+  outline: none;
   width: 100%;
   padding: 13px 20px 13px;
   font-style: normal;
@@ -35,10 +43,14 @@ body {
   line-height: 23px;
   color: #57565b;
 }
+
 .search-form__button {
   padding: 0;
   border: none;
-  margin-right: 18px;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  padding: 0 18px 0;
   cursor: pointer;
   background-color: transparent;
 }
@@ -85,31 +97,34 @@ body {
   right: 0;
   bottom: 0;
 }
+
 /* Header end */
 
 /* sliders start */
 .sliders {
-  max-width: 1194px;
   margin: 20px auto 50px;
 }
-.slide {
-  width: 1190px;
+
+.slide-container {
   min-height: 400px;
   color: #ffffff;
   border-radius: 20px;
   display: flex;
   align-items: center;
 }
+
 .slide-summer {
   background-image: url(../img/slide-summer.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .slide-autumn {
   background-image: url(../img/slide-autumn.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .slide-vitamins {
   background-image: url(../img/slide-vitamins.png);
   background-repeat: no-repeat;
@@ -120,6 +135,7 @@ body {
   max-width: 389px;
   max-height: 245px;
   margin-left: 102px;
+  position: relative;
 }
 
 .slide-title {
@@ -147,45 +163,62 @@ body {
   font-size: 14px;
   line-height: 23px;
 }
+
+.swiper {
+  position: relative;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-buttons__button {
+  cursor: pointer;
+}
+
 /* sliders end */
 
 /* offers start */
 .offers {
-  max-width: 1194px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   color: #ffffff;
-  margin: 0 auto;
+  margin: -20px;
 }
 
-.offer-card {
-  width: 570px;
-  height: 380px;
+.offers-card {
+  flex: 50%;
+  max-width: 570px;
+  min-height: 380px;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
   border-radius: 20px;
-  /* margin: 27px; */
+  padding: 32px;
+  margin: 20px;
 }
 
 .offer-header {
   max-width: 196px;
-  margin-left: 32px;
 }
 
 .offer-footer {
   max-width: 232px;
-  margin-left: 32px;
 }
 
-.offer-one {
+.offers-card__one {
   background-image: url(../img/offers-one.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.offer-two {
+.offers-card__two {
   background-image: url(../img/offers-two.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,11 +260,11 @@ body {
   padding: 13px 52px;
   border-radius: 50px;
 }
+
 /* offers end */
 
 /* delivery start */
 .delivery {
-  max-width: 1194px;
   margin: 110px auto 100px;
 }
 
@@ -321,44 +354,52 @@ body {
   background-color: #d0fd89;
   color: #49494f;
 }
+
 .card-vegetable__title {
   background-color: #aebc41;
   color: #ffffff;
 }
+
 .card-meat__title {
   background-color: #b86b78;
   color: #ffffff;
 }
+
 .card-bird__title {
   background-color: #d68334;
   color: #ffffff;
 }
+
 .card-fish__title {
   background-color: #cd6255;
   color: #ffffff;
 }
+
 .card-baby__title {
   background-color: #fffdbf;
   color: #49494f;
 }
+
 .card-parents__title {
   background-color: #f6fdc8;
   color: #49494f;
 }
+
 .card-festive__title {
   background-color: #fef7fe;
   color: #49494f;
 }
+
 /* delivery end */
 
 /* food-categories start */
 .food-categories {
   background-color: #f6f6f6;
   margin-bottom: 100px;
+  width: 100%;
 }
 
-.food-categories__conteiner {
-  max-width: 1194px;
+.food-categories__container {
   margin: 0 auto;
 }
 
@@ -482,11 +523,11 @@ body {
   border-radius: 33px;
   padding: 15px 105px;
 }
+
 /* food-categories end */
 
 /* advantages start */
-.advatages-conteiner {
-  max-width: 1194px;
+.advatages-container {
   margin: 0 auto;
 }
 
@@ -494,6 +535,7 @@ body {
   width: 60px;
   height: 56px;
 }
+
 .advantages-title {
   margin: 0 0 52px;
   font-weight: 500;
@@ -503,7 +545,6 @@ body {
 }
 
 .advantages-cards {
-  max-width: 1194px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -516,10 +557,10 @@ body {
   border: 1px solid #e9e9e9;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
   border-radius: 18px;
-  text-align: center; 
+  text-align: center;
 }
 
-.advantages-cards__card__conteiner {
+.advantages-cards__card__container {
   padding: 32px 24px 25px;
 }
 
@@ -537,20 +578,19 @@ body {
   line-height: 22px;
   color: #49494f;
 }
+
 /* advantages end */
 
 /* footer start */
 .footer {
   background-color: #F6F6F6;
-  height: 181px;
-  display: flex;
-  justify-content: center;
+  height: 180px;
 }
 
-.footer-conteiner {
+.footer-container {
   display: flex;
   align-items: center;
-  width: 1194px;
+  padding-top: 45px;
 }
 
 .footer__logo {
@@ -566,6 +606,7 @@ body {
   color: #000000;
   text-decoration-skip-ink: none;
 }
+
 .footer-socialsnetwork {
   display: flex;
   justify-content: space-between;
@@ -573,5 +614,114 @@ body {
   height: 28px;
   margin-left: auto;
 }
+
 /* footer end */
 
+/* media start */
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .food-categories-cards__card {
+    margin: 26px 100px;
+  }
+
+  .advantages-cards__card {
+    margin: 26px 100px;
+  }
+}
+
+@media (max-width: 996px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .slide-content {
+    margin-left: 70px;
+  }
+
+  .food-categories-cards__card {
+    margin: 26px 50px;
+  }
+
+  .advantages-cards__card {
+    margin: 26px 50px;
+  }
+}
+
+@media (max-width: 790px) {
+  .container {
+    max-width: 590px;
+  }
+
+  .slide-content {
+    margin-left: 40px;
+  }
+
+  .delivery-card {
+    margin: 10px;
+  }
+
+  .food-categories-cards__card {
+    margin: 10px 0;
+  }
+
+  .advantages-cards__card {
+    margin: 10px 0;
+  }
+
+  .cart {
+    margin-left: 15px;
+  }
+
+  .search-form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .delivery {
+    margin: 60px auto 60px;
+  }
+
+  .food-categories {
+    margin-bottom: 60px;
+  }
+
+  .advantages-cards {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 590px) {
+  .container {
+    max-width: 390px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search-form {
+    order: 5;
+    margin: 15px 0 0;
+  }
+  .login-text {
+    padding: 16px 50px;
+    margin-right: 23px;
+  }
+  .slide-content {
+    max-height: 100%;
+  }
+
+  .slider-buttons {
+    right: 10px;
+    bottom: 10px;
+  }
+}
+  /* media end */
